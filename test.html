@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>TEST ONE </title>
+        <link rel="stylesheet" href="test.css">
+        <script src="test.js"></script>
+    </head>
+    <body>
+        <!--Calculator container-->
+        <div id = "container">
+            <h1>Dominations<br>
+                <button id = "date">
+                    <script>
+                        // to get the current date
+                        const d = new Date();
+                        var month = d.getMonth()
+                        var year = d.getFullYear()
+                        var day = d.getDate()
+                        var monthList = [ "January", "February", "March", "April", "May", "June",
+                        "July", "August", "September", "October", "November", "December" ]
+                        document.write (day+"-" +monthList[month]+"-"+year)
+                    </script>
+                </button>
+            </h1>
+
+            <p id="demo"></p>
+
+            <!--The Change calculator section-->
+            <section>
+                <label id= "left">Enter amount(0-99):</label>
+                <input type="text" id="cents" />
+                <input type="button" value="Calculate" name="calculate" id="calculate" /><br><br>
+
+                <!--Quaters-->
+                <label id = "left">25:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text"  id="quarters"></label><br></br>
+                <!--dimes-->
+                <label id="left">10:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="dimes"></label><br></br>
+                <!--nickels-->
+                <label id = "left">5:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="nickels"></label><br></br>
+                <!--pennies-->
+                <label id = "left">1:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="pennies"></label><br></br>
+            </section>
+
+            <button id = "button-effect" onClick = backgroundColor()><b>Change BG Color</b></button>
+            
+        </div>
+
+    </body>
+</html>
